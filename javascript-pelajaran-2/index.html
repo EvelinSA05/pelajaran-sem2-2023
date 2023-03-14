@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript</title>
+    <script src="javascript/jquery.js"></script>
+    <script src="js/lat08.js" async></script>
+  </head>
+  <body>
+    <table id="tabel" border="1px">
+      <thead></thead>
+      <tbody id="dummyjson"></tbody>
+    </table>
+
+    <div>
+      <td><h1 id="tampil"></h1></td>
+    </div>
+
+    <button id="klik">Event Listener</button>
+    <br /><br />
+
+    <div>
+      <input type="number" placeholder="bulan" id="bulan" name="bln" />
+      <input type="number" placeholder="tanggal" id="tanggal" name="tgl" />
+      <button onclick="zodiak()">Zodiak</button>
+    </div>
+    <br />
+
+    <div>
+      <input type="number" placeholder="nilai" id="nilai" />
+      <button onclick="lulus()">Lulus</button>
+    </div>
+    <br />
+
+    <div>
+      <input type="number" placeholder="terbilang" id="angka" />
+      <button
+        onclick="tampil.innerHTML = terbilang(); console.log(terbilang());"
+      >
+        Terbilang
+      </button>
+    </div>
+    <br />
+
+    <div>
+      <input type="number" placeholder="prima" id="bilangan" />
+      <button onclick="tampil.innerHTML = prima(); console.log(prima());">
+        Prima
+      </button>
+    </div>
+
+    <h1 style="font-style: italic" id="belajar">BELAJAR JAVASCRIPT</h1>
+    <p id="paragraf">Saya Belajar</p>
+    <div id="isi"></div>
+    <div id="content">
+      <h2>Bakso</h2>
+      <p>deskripsi bakso</p>
+      <img src="images/smenda.jpg" alt="" />
+    </div>
+    <table id="tabel" border="1px">
+      <thead>
+        <tr>
+          <th>Nomor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>10</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <!-- <table border="1px">
+        <thead>
+            <tr>
+                <th>Nomor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><h1 id="tampil"></h1></td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <!-- <table border="1px">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Buah</th>
+                <th>Deskripsi</th>
+                <th>Harga</th>
+                <th>Gambar</th>
+            </tr>
+        </thead>
+        <tbody id="isidata">
+         
+        </tbody>
+    </table> -->
+  </body>
+</html>
