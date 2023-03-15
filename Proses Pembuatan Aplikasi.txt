@@ -1,0 +1,188 @@
+1. aplikasi toko hanya dibatasi 5
+   contoh : aplikasi pemilihan ketua osis
+2. cara pembuatan aplikasi :
+   1.) tentukan aplikasinya, misal: toko, laundry, rental, dst
+   2.) tentukan prosesnya, kemudian tentukan subjeknya
+       contoh: 
+	 a.) apk toko
+	 proses: jual-beli barang
+	 subjek: barang, pelanggan, admin.
+       b.) laundry
+	 proses: jasa laundry/cuci/setrika
+	 subjek: jasa, pelanggan, admin
+       c.) rental mobil
+	 proses: sewa mobil
+	 subjek: mobil, pelanggan, admin.
+   3.) tentukan deskripsi dari masing-masing subjek
+	 contoh :
+	 a.) toko : 
+		barang --> nama barang, harga, deskripsi, stock, gambar.
+
+tabel barang :
+1. id barang
+2. nama barang
+3. id kategori
+4. harga
+5. deskripsi
+6. stock
+7. gambar
+
+tabel kategori : 
+1. id kategori
+2. kategori
+
+		pelanggan --> nama pelanggan, alamat, telpon, email, status.
+
+tabel pelanggan : 
+1. idpelanggan
+2. pelanggan
+3. alamat
+4. telp
+5. email
+6. password
+7. status
+
+		admin --> username, password, status, level.
+
+tabel admin :
+1. idadmin
+2. username
+3. password
+4. status
+5. level
+
+           proses : barang dibeli oleh pelanggan, dicatat tanggal pembeliannya, jumlah order, harga, total, ongkir, metode pengiriman, total belanja.
+
+tabel proses : 
+1. tabel order
+	a. id order
+	b. tgl order
+	c. tgl selesai
+	d. idpelanggan
+	e. total
+	f. bayar
+	g. kurir
+	h. status
+
+2. tabel order detail 
+	a. idorderdetail
+	b. idorder
+	c. idjasa
+	d. harga jasa
+	e. jumlah
+
+ 	 b.) laundry :
+ 		jasa: cuci kiloan, setrika, cuci setrika, cuci basah, cuci kering.
+
+tabel kategori 
+1. idkategori 
+2. kategori
+
+tabel jasa 
+1. idjasa
+2. jasa
+3. idkategori
+4. harga
+5. satuan (pcs/kg)
+
+		pelanggan : nama, alamat, telp, email.
+
+tabel pelanggan :
+1. idpelanggan
+2. pelanggan
+3. alamat
+4. telp
+5. email
+6. password
+7. status
+		admin : username, password, status, level.
+
+tabel admin :
+1. idadmin
+2. username
+3. password
+4. status
+5. level
+
+            proses : pelanggan melakukan laundry, memilih opsi jasa, dicatat tanggal laundry, tanggal selesai, pembayaran laundry.
+
+tabel proses : 
+1. tabel order
+	a. id order
+	b. tgl order
+	c. tgl selesai
+	d. idpelanggan
+	e. total
+	f. bayar
+	g. kembali
+	h. status
+
+2. tabel order detail 
+	a. idorderdetail
+	b. idorder
+	c. idjasa
+	d. harga jasa
+	e. jumlah
+
+	 c.) rental :
+		mobil : merk mobil, jenis(Avanza), harga sewa, gambar mobil, 
+
+tabel merk 
+1. idmerek
+2. merek
+
+tabel jenis 
+1. idjenis
+2. jenis
+3. idmerk
+4. harga sewa
+
+		pelanggan : nama, alamat, telp, email
+
+tabel pelanggan :
+1. idpelanggan
+2. pelanggan
+3. alamat
+4. telp
+5. email
+6. password
+7. status
+
+		admin : username, password, status, level.
+
+tabel admin :
+1. idadmin
+2. username
+3. password
+4. status
+5. level
+
+		proses : pelanggan menyewa mobil sesuai jenis dan durasi peminjaman, pelanggan melakukan pembayaran sesuai harga sewa yang ditentukan
+
+tabel proses : 
+1. tabel order
+	a. id order
+	b. tgl order
+	c. tgl selesai
+	d. idpelanggan
+	e. total
+	f. bayar
+	g. kembali
+	h. status
+
+2. tabel order detail 
+	a. idorderdetail
+	b. idorder
+	c. idjasa
+	d. harga jasa
+	e. jumlah
+
+   5.) Buat rancangan tampilan menggunakan pulpen dan kertas untuk 3 layar, layar 1 : hp, layar 2 : tablet, layar 3 : desktop
+	 buat desain untuk halaman depan dan belakang (backend dan frontend), halaman depan untuk user, halaman belakang untuk admin
+   6.) buat tampilan menggunakan figma (mock up) berdasarkan hasil sketsa kertas.
+   7.) buat tampilan front end & back end menggunakan html css atau bootstrap atau yg lain / talwind / sass
+   8.) buat database sesuai dengan tampilan yang sudah dibuat 
+   9.) buat api menggunakan laravel 
+   10.) pindahkan html css yg sudah dibuat ke dalam react
+   11.) sambungkan api dan react
+   12.) uji aplkasi dan perbaiki jika ada kesalahan atau kekurangan
